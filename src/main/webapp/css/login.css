@@ -1,0 +1,143 @@
+/* 로그인 화면 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* 로그인 폼 컨테이너 */
+.login-form-container {
+    margin-top: 30px;
+    width: 300px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 입력 필드 스타일 */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-group input {
+    width: 95%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-group input:focus {
+    border-color: #8e735b;
+    outline: none;
+}
+
+/* 로그인 버튼 스타일 */
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5a5a5a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #8e735b;
+}
+
+/* 돌아가기 버튼 스타일 */
+.back-btn{
+    width: 100%;
+    padding: 10px;
+    background-color: #bbb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.back-btn:hover {
+    background-color: #999;
+}
+
+.signup-btn{
+	width:100%;
+	padding: 10px;
+	background-color : #a5a5a5;
+	color : white;
+	border : none;
+	border-radius : 4px;
+	font-size : 1rem;
+	cursor : pointer;
+	transition : background-color 0.3s ease;
+	margin-top : 10px;
+}
+
+.back-btn:hover {
+    background-color: #8e735b;
+}
+
+.login-link {
+	text-align: center;
+	margin-top: 20px;
+	font: 14px/1 "arial";
+	color: #777;
+}
+
+.login-link a {
+	color: #555;
+	text-decoration: underline;
+}
+
+.login-link a:hover {
+	color: #333;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    left: 0;
+}

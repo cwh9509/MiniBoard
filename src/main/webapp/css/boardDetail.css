@@ -1,0 +1,239 @@
+/* 전체적인 기본 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 헤더 */
+header {
+    display: flex;
+    justify-content: center;  /* 중앙 정렬 */
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-bottom: 2px solid #607d8b; /* 은은한 청회색 테두리 */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+/* 헤더 우측 버튼 (로그인) */
+.header-actions {
+    position: absolute;
+    right: 20px;
+}
+
+.login-btn {
+    background-color: #5a5a5a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn:hover {
+    background-color: #8e735b; /* 부드러운 회색 블루로 호버 */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+nav .btn {
+    color: white;
+    background-color: #5a5a5a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* 목록 버튼 중앙 정렬 */
+nav .center {
+    margin: 0 auto;  /* 중앙 정렬 */
+    margin-right: 10px;
+}
+
+nav .btn:hover {
+    background-color: #8e735b;
+}
+
+nav .login-btn {
+    background-color: #5a5a5a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav .login-btn:hover {
+    background-color: #8e735b;
+}
+
+/* 게시글 상세 보기 */
+.post-detail {
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.post-detail h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.post-detail p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.post-detail .post-actions {
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.post-detail .post-actions .btn {
+    background-color: #5a5a5a;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.post-detail .post-actions .btn:hover {
+    background-color: #8e735b;
+}
+
+
+/* 댓글 영역 */
+/* 댓글 목록 스타일 */
+
+/* 댓글 영역 */
+/* 댓글 목록 스타일 */
+.comments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 댓글 항목 스타일 */
+.comments-list li {
+    display: flex;               /* flex 레이아웃 적용 */
+    flex-direction: column;      /* 각 항목을 세로로 배치 */
+    background-color: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #8e735b; /* 왼쪽에 경계선 추가 */
+    position: relative;          /* 삭제 버튼을 상대 위치로 배치 */
+}
+
+/* 댓글 항목에 호버 효과 추가 */
+.comments-list li:hover {
+    background-color: #f1f1f1; /* 호버 시 배경 색 변경 */
+}
+
+/* 댓글 작성자와 날짜를 같은 줄에 배치 */
+.comments-list li .comment-header {
+    display: flex;
+    justify-content: space-between;  /* 작성자와 날짜를 양쪽 끝으로 배치 */
+    margin-bottom: 10px;             /* 작성자와 날짜 사이 간격 */
+}
+
+/* 댓글 내용 영역 */
+.comments-list li .comment-content {
+    margin-top: 5px;                /* 댓글 내용에 마진 추가 (한 줄 내려놓기) */
+}
+
+/* 삭제 버튼을 우측 가운데에 배치 */
+.comments-list li .comment-delete-btn {
+    position: absolute;            /* 절대 위치로 배치 */
+    right: 10px;                   /* 오른쪽에 위치 */
+    top: 50%;                      /* 세로 중앙 정렬 */
+    transform: translateY(-50%);   /* 정확한 세로 중앙 정렬 */
+    background-color: #d9534f;     /* 빨간색 배경 */
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* 삭제 버튼 호버 효과 */
+.comments-list li .comment-delete-btn:hover {
+    background-color: #c9302c;     /* 호버 시 어두운 빨간색으로 변경 */
+}
+
+/* 댓글 작성 폼 */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+form input[type="submit"] {
+    background-color: #5a5a5a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #8e735b;
+}
+
+
+
+/* 푸터 스타일 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
